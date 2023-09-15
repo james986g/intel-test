@@ -401,7 +401,7 @@ check_install() {
     STATUS=0
     {
       # 预下载 warp-go，并添加执行权限，如因 gitlab 接口问题未能获取，默认 v1.0.8
-      wget --no-check-certificate -qO /tmp/warp-go.tar.gz https://${CDN}github.com/james986g/intel-test/-/raw/main/warp-go/warp-go_1.0.8_linux_amd64.tar.gz
+      wget --no-check-certificate -qO /tmp/warp-go.tar.gz https://${CDN}github.com/james986g/intel-test/-/raw/main/warp-go/warp-go_1.0.8_linux_amd64v2.tar.gz
       tar xzf /tmp/warp-go.tar.gz -C /tmp/ warp-go
       chmod +x /tmp/warp-go
       rm -f /tmp/warp-go.tar.gz
